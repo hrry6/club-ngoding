@@ -6,7 +6,6 @@
   /* border: 1px solid black; */
 }
 html{
-  padding: 2rem 4rem;
   scroll-behavior: smooth;
 }
 #root:nth-child(2n) div{
