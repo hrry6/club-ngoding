@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  /* border: 1px solid black; */
+}
+html{
+  padding: 2rem 4rem;
+  scroll-behavior: smooth;
+}
+#root:nth-child(2n) div{
+  background-color: #FBF9F9;
+}
