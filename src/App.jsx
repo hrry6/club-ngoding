@@ -8,13 +8,11 @@ import Footer from "./components/Footer"
 function App() {
   return (
     <div>
-      <div className="px-[4rem] pt-[2rem] container m-auto">
         <Navbar/>
         <Hero/>
         <About/>
         <Galery/>
         <Mentors/>
-      </div>
         <Footer/>
     </div>
   )

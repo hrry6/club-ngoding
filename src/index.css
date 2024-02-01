@@ -8,6 +8,3 @@
 html{
   scroll-behavior: smooth;
 }
-#root:nth-child(2n) div{
-  background-color: #FBF9F9;
-}
