@@ -1,3 +1,5 @@
+import Arrow from '../assets/arrow-right.svg'
+
 const About = ()=>{
     return (
         <div className="py-[8rem] px-[1rem] sm:px-[2rem] md:px-[3rem] bg-[#FBF9F9]">
@@ -14,19 +16,31 @@ const About = ()=>{
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-[1rem] mt-12">
                     <div className="px-[2rem] py-[1rem] border-zinc-500 border rounded-xl flex justify-between items-center max-sm:w-full">
                         <div className="text-xl sm:text-4xl">Frontend</div>
-                        <div className="max-sm:text-xs sm:mt-3">What you'll learn?</div>
+                        <div className='flex justify-end items-center gap-2'>
+                            <div className="max-sm:text-xs">What you'll learn?</div>
+                            <img src={Arrow} alt="" />
+                        </div>
                     </div>
                     <div className="px-[2rem] py-[1rem] border-zinc-500 border rounded-xl flex justify-between items-center max-sm:w-full">
                         <div className="text-xl sm:text-4xl">Backend</div>
-                        <div className="max-sm:text-xs sm:mt-3">What you'll learn?</div>
+                        <div className='flex justify-end items-center gap-2'>
+                            <div className="max-sm:text-xs">What you'll learn?</div>
+                            <img src={Arrow} alt="" />
+                        </div>
                     </div>
                     <div className="px-[2rem] py-[1rem] border-zinc-500 border rounded-xl flex justify-between items-center max-sm:w-full">
                         <div className="text-xl sm:text-4xl">UI/UX Design</div>
-                        <div className="max-sm:text-xs sm:mt-3">What you'll learn?</div>
+                        <div className='flex justify-end items-center gap-2'>
+                            <div className="max-sm:text-xs">What you'll learn?</div>
+                            <img src={Arrow} alt="" />
+                        </div>
                     </div>
                     <div className="px-[2rem] py-[1rem] border-zinc-500 border rounded-xl flex justify-between items-center max-sm:w-full">
                         <div className="text-xl sm:text-4xl">Android</div>
-                        <div className="max-sm:text-xs sm:mt-3">What you'll learn?</div>
+                        <div className='flex justify-end items-center gap-2'>
+                            <div className="max-sm:text-xs">What you'll learn?</div>
+                            <img src={Arrow} alt="" />
+                        </div>
                     </div>
                 </div>
             </div>

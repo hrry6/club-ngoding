@@ -1,3 +1,6 @@
+import DickyImg from '../../img/mentor/Dicky.jpeg'
+import Arrow from '../assets/arrow-right.svg'
+
 const Mentors = ()=>{
     return(
         <div className="py-[8rem] px-[1rem] sm:px-[2rem] md:px-[3rem] bg-[#FBF9F9]">
@@ -15,14 +18,14 @@ const Mentors = ()=>{
                             baik itu dalam mengembangkan karir, mempelajari keterampilan baru, atau mencapai tujuan pribadi.
                         </div>
                     </div>
-                    <div className="flex items-end mb-7">
-                        <div className="text-xl border rounded-full border-black px-[1.5rem] py-[0] sm:px-[2rem] sm:py-[.5rem]">i</div>
-                        <div className="text-xl border rounded-full border-black px-[1.5rem] py-[0] sm:px-[2rem] sm:py-[.5rem]">i</div>
+                    <div className="flex items-end justify-center mb-7 gap-[16px]">
+                        <img src={Arrow} alt="" className='border rounded-full border-black px-[1.5rem] py-[0] sm:px-[2rem] sm:py-[.5rem] rotate-180 cursor-pointer hover:bg-[#25263A] ease-in-out duration-300' />    
+                        <img src={Arrow} alt="" className='border rounded-full border-black px-[1.5rem] py-[0] sm:px-[2rem] sm:py-[.5rem] w-[500px] cursor-pointer hover:bg-[#25263A] ease-in-out duration-300' />    
                     </div>
                 </div>
                 <div className="flex overflow-x-auto gap-6 mt-6 [&>*:nth-child(even)]:mt-[5rem] ">
                     <div className="grid w-[15rem] h-full">
-                        <div className="bg-gray-300 aspect-[2/4] rounded-xl"></div>
+                        <img src={DickyImg} className="bg-gray-300 aspect-[2/4] rounded-xl"/>
                         <div className="">
                             <div className="">KETUA Neracode.</div>
                             <div className="">Muhammad Sumbul</div>
@@ -30,7 +33,7 @@ const Mentors = ()=>{
                         </div>
                     </div>
                     <div className="grid w-[15rem] h-full">
-                        <div className="bg-gray-300 aspect-[2/4] rounded-xl"></div>
+                        <img src={DickyImg} className="bg-gray-300 aspect-[2/4] rounded-xl"/>
                         <div className="">
                             <div className="">WAKIL KETUA Neracode.</div>
                             <div className="">Dicky Asqaelani</div>
@@ -38,7 +41,7 @@ const Mentors = ()=>{
                         </div>
                     </div>
                     <div className="grid w-[15rem] h-full">
-                        <div className="bg-gray-300 aspect-[2/4] rounded-xl"></div>
+                        <img src={DickyImg} className="bg-gray-300 aspect-[2/4] rounded-xl"/>
                         <div className="">
                             <div className="">KETUA Neracode.</div>
                             <div className="">Muhammad Sumbul</div>
@@ -46,7 +49,7 @@ const Mentors = ()=>{
                         </div>
                     </div>
                     <div className="grid w-[15rem] h-full">
-                        <div className="bg-gray-300 aspect-[2/4] rounded-xl"></div>
+                        <img src={DickyImg} className="bg-gray-300 aspect-[2/4] rounded-xl"/>
                         <div className="">
                             <div className="">KETUA Neracode.</div>
                             <div className="">Muhammad Sumbul</div>
@@ -54,7 +57,7 @@ const Mentors = ()=>{
                         </div>
                     </div>
                     <div className="grid w-[15rem] h-full">
-                        <div className="bg-gray-300 aspect-[2/4] rounded-xl"></div>
+                        <img src={DickyImg} className="bg-gray-300 aspect-[2/4] rounded-xl"/>
                         <div className="">
                             <div className="">KETUA Neracode.</div>
                             <div className="">Muhammad Sumbul</div>
@@ -62,7 +65,7 @@ const Mentors = ()=>{
                         </div>
                     </div>
                     <div className="grid w-[15rem] h-full">
-                        <div className="bg-gray-300 aspect-[2/4] rounded-xl"></div>
+                        <img src={DickyImg} className="bg-gray-300 aspect-[2/4] rounded-xl"/>
                         <div className="">
                             <div className="">KETUA Neracode.</div>
                             <div className="">Muhammad Sumbul</div>

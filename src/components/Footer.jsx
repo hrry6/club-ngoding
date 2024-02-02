@@ -14,7 +14,7 @@ const Footer = ()=>{
                 <div id='contact'>
                     <div className="flex items-center gap-[12px]">
                         <img src={Icon} alt="" className="w-[37px] h-[37px]" />
-                        <div className="text-white font-semibold text-[20px]">Neocode</div>
+                        <div className="text-white font-semibold text-[20px]">Neracode</div>
                     </div>
                     <div className="bg-white mt-[47px] py-[18px] px-[24px] flex justify-between items-center gap-[88px] rounded-[12px]">
                         <div className="text-[18px]">Ready for start  your Journey? <br /> Join with us Now.</div>
