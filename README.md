@@ -2,6 +2,8 @@
 ### Next Generation Code 
 <hr>
 
+<img src="img/LOGO_NERACODE.png" style="width: 500px;">
+
 ## Sekilas
 
 Neracode (Next Generation Code) merupakan komunitas yang didirikan di jurusan Rekayasa Perangkat Lunak SMKN 1 Kota Bekasi yang bertujuan menjadi wadah atau forum diskusi bagi siswa/siswi. Neracode adalah tempat para siswa berkumpul dalam mendalami dunia pemrograman. Ini adalah klub yang menyediakan platform bagi siswa untuk belajar, berlatih, dan berkolaborasi dalam berbagai proyek dan aktivitas coding.
@@ -29,4 +31,9 @@ Neracode (Next Generation Code) merupakan komunitas yang didirikan di jurusan Re
 * Aprilia : Sekretaris
 * Anna : Sekretaris
 * Syafira : Sekretaris
+
+## Requirements Project
+
+* NodeJS v20 Required
+* Vite latest version
 
