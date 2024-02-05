@@ -1,5 +1,3 @@
-import Arrow from '../assets/arrow-right.svg'
-
 const Galery = ()=> {
     return (
         <div className="py-[8rem] px-[1rem] sm:px-[2rem] md:px-[3rem]">
@@ -9,9 +7,12 @@ const Galery = ()=> {
                         <div className="text-5xl max-sm:text-2xl">Moment kami.</div>
                         <div className="text-xl max-sm:text-xs mt-3">Tinggalkan 1 moment yang membuatmu berkembang di sini</div>
                     </div>
-                    <button className='flex justify-center text-lg mt-6 px-[1.5rem] py-[.5rem] border border-black rounded-full w-fit gap-[12px] hover:bg-[#25263A] hover:text-[#FEFCFB] ease-in-out duration-300 group'>
+                    <button className='flex justify-center items-center text-lg mt-6 px-[1.5rem] py-[.5rem] border border-black rounded-full w-fit gap-[12px] hover:bg-[#25263A] hover:text-[#FEFCFB] ease-in-out duration-300 group'>
                         <div className="">Lihat semua</div>
-                        <img src={Arrow} alt="" className='-rotate-45 group-hover:rotate-0 ease-in-out duration-300' />
+                        <svg className='-rotate-45 group-hover:rotate-0 ease-in-out duration-300' width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M12 5L19 12L12 19" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </button>
                 </div>
                 <div className="flex gap-6 aspect-[11/4] mt-8 max-md:flex-col">

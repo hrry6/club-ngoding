@@ -1,5 +1,3 @@
-import Arrow from '../assets/arrow-right.svg'
-
 const About = ()=>{
     return (
         <div className="py-[8rem] px-[1rem] sm:px-[2rem] md:px-[3rem] bg-[#FBF9F9]">
@@ -18,28 +16,40 @@ const About = ()=>{
                         <div className="text-xl sm:text-4xl">Frontend</div>
                         <div className='flex justify-end items-center gap-2'>
                             <div className="max-sm:text-xs">What you'll learn?</div>
-                            <img src={Arrow} alt="" />
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5L19 12L12 19" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </div>
                     </div>
                     <div className="px-[2rem] py-[1rem] border-zinc-500 border rounded-xl flex justify-between items-center max-sm:w-full">
                         <div className="text-xl sm:text-4xl">Backend</div>
                         <div className='flex justify-end items-center gap-2'>
                             <div className="max-sm:text-xs">What you'll learn?</div>
-                            <img src={Arrow} alt="" />
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5L19 12L12 19" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </div>
                     </div>
                     <div className="px-[2rem] py-[1rem] border-zinc-500 border rounded-xl flex justify-between items-center max-sm:w-full">
                         <div className="text-xl sm:text-4xl">UI/UX Design</div>
                         <div className='flex justify-end items-center gap-2'>
                             <div className="max-sm:text-xs">What you'll learn?</div>
-                            <img src={Arrow} alt="" />
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5L19 12L12 19" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </div>
                     </div>
                     <div className="px-[2rem] py-[1rem] border-zinc-500 border rounded-xl flex justify-between items-center max-sm:w-full">
                         <div className="text-xl sm:text-4xl">Android</div>
                         <div className='flex justify-end items-center gap-2'>
                             <div className="max-sm:text-xs">What you'll learn?</div>
-                            <img src={Arrow} alt="" />
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 12H19" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12 5L19 12L12 19" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
                         </div>
                     </div>
                 </div>

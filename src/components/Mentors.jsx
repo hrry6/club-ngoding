@@ -1,5 +1,4 @@
 import DickyImg from '../../img/mentor/Dicky.jpeg'
-import Arrow from '../assets/arrow-right.svg'
 
 const Mentors = ()=>{
     return(
@@ -19,8 +18,16 @@ const Mentors = ()=>{
                         </div>
                     </div>
                     <div className="flex items-end justify-center mb-7 gap-[16px]">
-                        <img src={Arrow} alt="" className='border rounded-full border-black px-[1.5rem] py-[0] sm:px-[2rem] sm:py-[.5rem] rotate-180 cursor-pointer hover:bg-[#25263A] ease-in-out duration-300' />    
-                        <img src={Arrow} alt="" className='border rounded-full border-black px-[1.5rem] py-[0] sm:px-[2rem] sm:py-[.5rem] w-[500px] cursor-pointer hover:bg-[#25263A] ease-in-out duration-300' />    
+                        <svg className='rotate-180 border rounded-full border-black text-bg-[#25263A] cursor-pointer hover:bg-[#25263A] hover:text-[#FEFCFB] ease-in-out duration-300' width="105" height="41" viewBox="0 0 105 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M72.5146 12L80.9999 20.4853" stroke="currentcolor" stroke-linecap="round"/>
+                            <path d="M24 20.4853H81" stroke="currentcolor" stroke-linecap="round"/>
+                            <path d="M72.5146 28.9706L80.9999 20.4853" stroke="currentcolor" stroke-linecap="round"/>
+                        </svg>
+                        <svg className='border rounded-full border-black text-bg-[#25263A] cursor-pointer hover:bg-[#25263A] hover:text-[#FEFCFB] ease-in-out duration-300' width="105" height="41" viewBox="0 0 105 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M72.5146 12L80.9999 20.4853" stroke="currentcolor" stroke-linecap="round"/>
+                            <path d="M24 20.4853H81" stroke="currentcolor" stroke-linecap="round"/>
+                            <path d="M72.5146 28.9706L80.9999 20.4853" stroke="currentcolor" stroke-linecap="round"/>
+                        </svg>
                     </div>
                 </div>
                 <div className="flex overflow-x-auto gap-6 mt-6 [&>*:nth-child(even)]:mt-[5rem] ">
