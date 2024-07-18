@@ -1,4 +1,5 @@
 import MyContainer from "./template/MyCountainer"
+import gambar from "../assets/galeri/2.jpeg"
 
 const Galery = ()=> {
     return (
@@ -19,16 +20,16 @@ const Galery = ()=> {
             <div className="mt-8">
                 <div className="grid grid-cols-3 max-lg:grid-cols-1 max-lg:grid-rows-[2fr,1.5fr,2fr] gap-4 h-[45rem]">
                     <div className="grid gap-4 grid-rows-[2fr,1fr] max-lg:grid-rows-[1fr] max-lg:grid-cols-2 w-full">
-                        <div className="bg-gray-200 w-full rounded-xl h-full"><img src="" alt="" /></div>
-                        <div className="bg-gray-200 w-full rounded-xl h-full"><img src="" alt="" /></div>
+                        <img src={gambar} alt="" className="bg-gray-200 w-full bg-cover object-cover rounded-xl h-full" />
+                        <img src={gambar} alt="" className="bg-gray-200 w-full bg-cover object-cover rounded-xl h-full" />
                     </div>
                     <div className="grid gap-4 grid-rows-[1fr,2fr] max-lg:grid-rows-[1fr] w-full">
-                        <div className="bg-gray-200 w-full rounded-xl h-full"><img src="" alt="" /></div>
-                        <div className="bg-gray-200 w-full rounded-xl h-full max-lg:hidden"><img src="" alt="" /></div>
+                        <img src={gambar} alt="" className="bg-gray-200 w-full bg-cover object-cover rounded-xl h-full" />
+                        <img src={gambar} alt="" className="bg-gray-200 w-full bg-cover object-cover rounded-xl h-full max-lg:hidden" />
                     </div>
                     <div className="grid gap-4 grid-rows-[2fr,1fr] max-lg:grid-rows-[1fr] max-lg:grid-cols-2 w-full">
-                        <div className="bg-gray-200 w-full rounded-xl h-full"><img src="" alt="" /></div>
-                        <div className="bg-gray-200 w-full rounded-xl h-full"><img src="" alt="" /></div>
+                        <img src={gambar} alt="" className="bg-gray-200 w-full bg-cover object-cover rounded-xl h-full" />
+                        <img src={gambar} alt="" className="bg-gray-200 w-full bg-cover object-cover rounded-xl h-full" />
                     </div>
                 </div>
             </div>

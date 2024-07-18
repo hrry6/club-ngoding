@@ -5,7 +5,7 @@ const Card = (props) => {
     return (
         <button className="group text-start">
             <div className=" border-zinc-500 relative border rounded-xl max-sm:w-full group-focus:text-[#FEFCFB] ease-in-out duration-300 overflow-hidden">
-                <div className="absolute group-focus:bg-[#25263A] bottom-0 left-0 rounded-r-full rounded-tl-full group-focus:rounded-none group-focus:w-full group-focus:h-full w-0 h-0 -z-10 ease-in-out duration-700" ></div>
+                <div className="absolute group-focus:bg-[#25263A] top-[50%] group-focus:translate-y-[-50%] -left-20 group-focus:left-0 rounded-full aspect-square group-focus:rounded-none group-focus:w-full w-0 -z-10 ease-in-out duration-700" ></div>
                 <div className="px-8 py-5 flex justify-between items-center">
                     <div className="text-xl sm:text-4xl">{title}</div>
                     <div className='flex justify-end items-center gap-2'>
@@ -17,7 +17,8 @@ const Card = (props) => {
                     </div>
                 </div>
             </div>
-            <div className="group-focus:grid hidden border-x-[2px] gap-4 mt-4">
+
+            <div className="group-focus:grid gap-2 mt-2">
                 {
                     tech.map((item, index) => (
                         <DetailCard key={index} title={item.title}>

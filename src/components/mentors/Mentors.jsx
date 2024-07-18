@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import Card from "./Card";
@@ -75,12 +75,17 @@ const Mentors = () => {
         },
     ]);
 
-    const [isMoved, setIsMoved] = useState('');
+    const [isArrowClicked, setIsArrowClicked] = useState(false);
 
-    const handleMovedClick = () => {
-        setIsMoved(true)
-        setTimeout(() => setIsMoved(false), 300)
-        console.log()
+    useEffect(() => {
+        if (isArrowClicked) {
+            const timeout = setTimeout(() => setIsArrowClicked(false), 300);
+            return () => clearTimeout(timeout);
+        }
+    }, [isArrowClicked]);
+
+    const handleArrowClick = () => {
+        setIsArrowClicked(true);
     };
 
     return (
@@ -128,7 +133,7 @@ const Mentors = () => {
                         <div className="splide__arrows relative w-[12rem] mb-8 flex justify-between">
                             <button
                                 className="splide__arrow--prev"
-                                onClick={handleMovedClick}
+                                onClick={handleArrowClick}
                             >
                                 <svg
                                     className="border rounded-full border-black text-bg-[#25263A] cursor-pointer hover:bg-[#25263A] hover:text-[#FEFCFB] ease-in-out duration-300"
@@ -157,7 +162,7 @@ const Mentors = () => {
                             </button>
                             <button
                                 className="splide__arrow--next"
-                                onClick={handleMovedClick}
+                                onClick={handleArrowClick}
                             >
                                 <svg
                                     className="border rounded-full border-black text-bg-[#25263A] cursor-pointer hover:bg-[#25263A] hover:text-[#FEFCFB] ease-in-out duration-300"
@@ -188,7 +193,7 @@ const Mentors = () => {
                     </div>
                     <SplideTrack>
                         {mentors.map(({ name, posisi, kelas, img }, index) => (
-                            <SplideSlide key={index} className={`mentor-card h-full ${isMoved && 'animasi'}`}>
+                            <SplideSlide key={index} className={`mentor-card h-full ${isArrowClicked && 'animasi'}`}>
                                 <Card
                                     posisi={posisi}
                                     nama={name}
