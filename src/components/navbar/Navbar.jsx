@@ -90,7 +90,7 @@ const Navbar = () => {
           className={`${isDropdownActive
             ? "gap-12 max-md:pt-[70vh] max-md:pb-[30vh] max-md:opacity-100"
             : "max-md:text-xs max-md:pointer-events-none gap-12 max-md:pt-[40vh] max-md:pb-[10vh] max-md:opacity-0 "
-            } flex max-md:w-full max-md:text-2xl max-md:items-center max-md:rounded-full max-md:justify-between duration-700 transition-all ease-in-out delay-250 max-md:bg-white max-md:flex-col max-md:absolute max-md:top-[-50vh] max-md:left-[50%] max-md:translate-x-[-50%]`}
+            } flex max-md:w-screen max-md:text-2xl max-md:items-center max-md:rounded-full max-md:justify-between duration-700 transition-all ease-in-out delay-250 max-md:bg-white max-md:flex-col max-md:absolute max-md:top-[-50vh] max-md:left-[50%] max-md:translate-x-[-50%]`}
         >
           <Link to="/#about" onClick={handleLinkClick}>
             About
