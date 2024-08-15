@@ -69,7 +69,7 @@ const Navbar = () => {
       <div className="container relative m-auto flex items-center justify-between">
         <Link
           to="/"
-          className={`${!isDropdownActive ? "max-md:pl-16" : "max-md:pl-4"
+          className={`${!isDropdownActive ? "max-md:ml-16" : "max-md:ml-4"
             } duration-700 ease-[cubic-bezier(.75, .2, .2, 0.94)] transition-all delay-250 text-xl text-[1.5rem] md:text-xl z-[99]`}
         >
           Neracode
