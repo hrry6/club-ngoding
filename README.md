@@ -2,7 +2,7 @@
 ### Next Generation Code 
 <hr>
 
-<img src="img/LOGO_NERACODE.png" style="width: 500px;">
+<img src="src/assets/LOGO_NERACODE.png" style="width: 500px;">
 
 ## Sekilas
 

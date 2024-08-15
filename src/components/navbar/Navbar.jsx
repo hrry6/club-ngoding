@@ -6,6 +6,7 @@ const Navbar = () => {
   
   const limitScroll = useRef(false);
   const lastScroll = useRef(0);
+  const limitMouseMove = useRef(false);
   
   const [isDropdownActive, setDropdownActive] = useState(false);
   const [isNavbarHidden, setNavbarIsHidden] = useState(false);
@@ -28,7 +29,7 @@ const Navbar = () => {
     function handleScroll(){
       if (limitScroll.current) return
 
-      setNavbarIsHidden(window.scrollY > 200 && window.scrollY > lastScroll.current);
+      setNavbarIsHidden(!isDropdownActive && window.scrollY > 200 && window.scrollY > lastScroll.current);
       lastScroll.current = window.scrollY;
 
       limitScroll.current = true;
@@ -36,8 +37,13 @@ const Navbar = () => {
     };
 
     function handleMouseMove(event){
+      if (limitMouseMove.current) return
+      
       const mouseY = event.clientY;
       setNavbarIsHidden(!isDropdownActive && window.scrollY > 200 && mouseY > 150);
+      
+      limitMouseMove.current = true;
+      setTimeout(() => limitMouseMove.current = false, 300);
     };
 
     document.body.style.overflow = isDropdownActive ? "hidden" : "";
