@@ -12,7 +12,9 @@
   "dependencies": {
     "@splidejs/react-splide": "^0.7.12",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-lazy-load-image-component": "^1.6.2",
+    "react-router-dom": "^6.26.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",

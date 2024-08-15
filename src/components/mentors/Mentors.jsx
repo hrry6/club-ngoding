@@ -1,95 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Splide, SplideSlide, SplideTrack } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import Card from "./Card";
-import DickyImg from '../../assets/mentor/Dicky.jpeg'
 import MyContainer from "../template/MyCountainer";
+import MentorsData from "../../data/MentorsData";
 
 const Mentors = () => {
-    const [mentors, setMentor] = useState([
-        {
-            name: "dicky asqaelany ibnul hakim",
-            posisi: "ketua neracode",
-            kelas: "12 rpl b",
-            img: DickyImg,
-        },
-        {
-            name: "dicky asqaelany ibnul hakim",
-            posisi: "ketua neracode",
-            kelas: "12 rpl b",
-            img: DickyImg,
-        },
-        {
-            name: "dicky asqaelany ibnul hakim",
-            posisi: "ketua neracode",
-            kelas: "12 rpl b",
-            img: DickyImg,
-        },
-        {
-            name: "dicky asqaelany ibnul hakim",
-            posisi: "ketua neracode",
-            kelas: "12 rpl b",
-            img: DickyImg,
-        },
-        {
-            name: "dicky asqaelany ibnul hakim",
-            posisi: "ketua neracode",
-            kelas: "12 rpl b",
-            img: DickyImg,
-        },
-        {
-            name: "dicky asqaelany ibnul hakim",
-            posisi: "ketua neracode",
-            kelas: "12 rpl b",
-            img: DickyImg,
-        },
-        {
-            name: "dicky asqaelany ibnul hakim",
-            posisi: "ketua neracode",
-            kelas: "12 rpl b",
-            img: DickyImg,
-        },
-        {
-            name: "dicky asqaelany ibnul hakim",
-            posisi: "ketua neracode",
-            kelas: "12 rpl b",
-            img: DickyImg,
-        },
-        {
-            name: "dicky asqaelany ibnul hakim",
-            posisi: "ketua neracode",
-            kelas: "12 rpl b",
-            img: DickyImg,
-        },
-        {
-            name: "dicky asqaelany ibnul hakim",
-            posisi: "ketua neracode",
-            kelas: "12 rpl b",
-            img: DickyImg,
-        },
-        {
-            name: "dicky asqaelany ibnul hakim",
-            posisi: "ketua neracode",
-            kelas: "12 rpl b",
-            img: DickyImg,
-        },
-    ]);
+    const [isArrowClicked, setIsArrowClicked] = useState();
 
-    const [isArrowClicked, setIsArrowClicked] = useState(false);
-
-    useEffect(() => {
-        if (isArrowClicked) {
-            const timeout = setTimeout(() => setIsArrowClicked(false), 300);
-            return () => clearTimeout(timeout);
-        }
-    }, [isArrowClicked]);
-
-    const handleArrowClick = () => {
-        setIsArrowClicked(true);
-    };
+    const handleLinkClick = () => {
+        setIsArrowClicked(!isArrowClicked)
+    }
 
     return (
-        <MyContainer containerId='mentors' containerStyle='mt-20'>
+        <MyContainer containerId='mentors' background='mt-20'>
             <Splide
                 hasTrack={false}
                 options={{
@@ -99,7 +23,7 @@ const Mentors = () => {
                     speed: 700,
                     easing: "cubic-bezier(.75, .2, .2, 0.94)",
                     pagination: false,
-                    gap: 10,
+                    gap: 35,
                     breakpoints: {
                         620: {
                             perPage: 2,
@@ -133,12 +57,10 @@ const Mentors = () => {
                         <div className="splide__arrows relative w-[12rem] mb-8 flex justify-between">
                             <button
                                 className="splide__arrow--prev"
-                                onClick={handleArrowClick}
+                                onClick={handleLinkClick}
                             >
                                 <svg
-                                    className="border rounded-full border-black text-bg-[#25263A] cursor-pointer hover:bg-[#25263A] hover:text-[#FEFCFB] ease-in-out duration-300"
-                                    width="80"
-                                    height="30"
+                                    className="w-20 h-8 border rounded-full border-black text-bg-[#25263A] cursor-pointer hover:bg-[#25263A] hover:text-[#FEFCFB] ease-in-out duration-300"
                                     viewBox="0 0 105 41"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -162,12 +84,10 @@ const Mentors = () => {
                             </button>
                             <button
                                 className="splide__arrow--next"
-                                onClick={handleArrowClick}
+                                onClick={handleLinkClick}
                             >
                                 <svg
-                                    className="border rounded-full border-black text-bg-[#25263A] cursor-pointer hover:bg-[#25263A] hover:text-[#FEFCFB] ease-in-out duration-300"
-                                    width="80"
-                                    height="30"
+                                    className="w-20 h-8 border rounded-full border-black text-bg-[#25263A] cursor-pointer hover:bg-[#25263A] hover:text-[#FEFCFB] ease-in-out duration-300"
                                     viewBox="0 0 105 41"
                                     fill="none"
                                     xmlns="http://www.w3.org/2000/svg"
@@ -192,12 +112,12 @@ const Mentors = () => {
                         </div>
                     </div>
                     <SplideTrack>
-                        {mentors.map(({ name, posisi, kelas, img }, index) => (
-                            <SplideSlide key={index} className={`mentor-card h-full ${isArrowClicked && 'animasi'}`}>
+                        {MentorsData.map(({ name, posisi, angkatan, img }, index) => (
+                            <SplideSlide key={index} className={`h-full duration-700 ease-[cubic-bezier(.75, .2, .2, 0.94)] transition-all delay-250 ${isArrowClicked ? '[&:nth-child(2n)]:mt-[-1.5rem]' : '[&:nth-child(2n+1)]:mt-[-1.5rem]'}`}>
                                 <Card
                                     posisi={posisi}
                                     nama={name}
-                                    kelas={kelas}
+                                    angkatan={angkatan}
                                     imgSrc={img}
                                 />
                             </SplideSlide>

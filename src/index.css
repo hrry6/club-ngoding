@@ -3,25 +3,8 @@
 @tailwind utilities;
 
 
-* {
-  /* border: 1px solid black; */
-}
-html{
-  scroll-behavior: smooth;
-}
-
-.mentor-card {
-  transition: 1s;
-}
-.mentor-card:nth-child(2n){
-  margin-top: 0;
-}
-.mentor-card:nth-child(2n+1){
-  margin-top: 1.5rem;
-}
-.mentor-card.animasi:nth-child(2n+1){
-  margin-top: 0;
-}
-.mentor-card.animasi:nth-child(2n){
-  margin-top: 1.5rem;
+@media only screen and (max-width: 400px) {
+  :root {
+    font-size: 4vw;
+  }
 }
