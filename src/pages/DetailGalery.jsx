@@ -12,7 +12,7 @@ function DetailGalery() {
         </div>
       </div>
 
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {GaleryDetailData.map((src, index) => (
           <div className={`rounded-xl [&:nth-child(3n+1)]:row-[span_2] overflow-hidden bg-gray-500`} key={index}>
             <LazyLoadImage
